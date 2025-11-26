@@ -10,7 +10,7 @@ label: RFI Flagging
 
 requirements:
   DockerRequirement:
-    dockerPull: ghcr.io/ska-cwl/astronomy-tools:latest
+    dockerPull: astronomy-tools:latest
   InitialWorkDirRequirement:
     listing:
       - entry: $(inputs.ms)

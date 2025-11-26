@@ -8,7 +8,7 @@ label: FITS Header Extractor
 
 requirements:
   DockerRequirement:
-    dockerPull: ghcr.io/ska-cwl/astronomy-tools:latest
+    dockerPull: astronomy-tools:latest
   InitialWorkDirRequirement:
     listing:
       - entryname: extract_header.py

@@ -170,13 +170,13 @@ fi
 
 echo ""
 
-# Pull workshop Docker image
+# Check workshop Docker image
 echo "Checking workshop Docker image..."
-if docker images | grep -q "ska-cwl/astronomy-tools"; then
+if docker images | grep -q "astronomy-tools"; then
     check_pass "Workshop Docker image is available"
 else
     echo "  ℹ️  Workshop Docker image not found locally"
-    echo "      Run: docker pull ghcr.io/ska-cwl/astronomy-tools:latest"
+    echo "      Build it with: docker build -t astronomy-tools:latest docker/astronomy-tools/"
 fi
 
 echo ""

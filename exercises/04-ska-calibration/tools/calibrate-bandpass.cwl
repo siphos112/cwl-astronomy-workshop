@@ -10,7 +10,7 @@ label: Bandpass Calibration
 
 requirements:
   DockerRequirement:
-    dockerPull: ghcr.io/ska-cwl/astronomy-tools:latest
+    dockerPull: astronomy-tools:latest
   InitialWorkDirRequirement:
     listing:
       - entryname: calibrate_bandpass.py

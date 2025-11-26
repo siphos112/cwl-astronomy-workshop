@@ -8,7 +8,7 @@ label: Report Generator
 
 requirements:
   DockerRequirement:
-    dockerPull: ghcr.io/ska-cwl/astronomy-tools:latest
+    dockerPull: astronomy-tools:latest
   InitialWorkDirRequirement:
     listing:
       - entryname: generate_report.py

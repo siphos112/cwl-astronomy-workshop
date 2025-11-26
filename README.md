@@ -72,8 +72,8 @@ source cwl-workshop-env/bin/activate  # Linux/macOS
 # Verify your setup
 ./setup/workshop-check.sh
 
-# Pull the Docker image
-docker pull ghcr.io/ska-cwl/astronomy-tools:latest
+# Build the workshop Docker image
+docker build -t astronomy-tools:latest docker/astronomy-tools/
 
 # Run your first workflow
 cd exercises/01-hello-cwl
