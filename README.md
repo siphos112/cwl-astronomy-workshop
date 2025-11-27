@@ -73,7 +73,7 @@ source cwl-workshop-env/bin/activate  # Linux/macOS
 ./setup/workshop-check.sh
 
 # Build the workshop Docker image
-docker build -t astronomy-tools:latest docker/astronomy-tools/
+docker build --platoform=linux/amd64 -t astronomy-tools:latest docker/astronomy-tools/
 
 # Run your first workflow
 cd exercises/01-hello-cwl
